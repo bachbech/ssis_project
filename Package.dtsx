@@ -1,0 +1,1204 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="DESKTOP-6H7BOAT\LENOVO"
+  DTS:CreatorComputerName="DESKTOP-6H7BOAT"
+  DTS:CreationDate="12/24/2023 5:37:10 PM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{BD25D91E-5A22-40FE-AC19-E17C67256BD5}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package"
+  DTS:DTSID="{BA6177DD-1F66-4F4B-B3D2-3858C94C0A8E}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:ObjectName="Flat File Connection Manager"
+      DTS:DTSID="{8BE2DCEB-8C03-493D-A246-3AA83D30C0D0}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x0022__x003B__x0022_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\LENOVO\Downloads\FantasticCatalogue (1).csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ref"
+              DTS:DTSID="{EDCD511D-8077-4C6F-BDF3-22947775B4F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="isbn"
+              DTS:DTSID="{8E04A1E4-9236-4803-9DA4-632091EC27DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{D4C63357-05C5-4602-A8DF-19A2CE81E7A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="authors"
+              DTS:DTSID="{3F9D268C-7403-4FC0-AF24-95C52D764CD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="language"
+              DTS:DTSID="{8A797DE0-5D55-4E00-A521-12E236FD5B91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pubdate"
+              DTS:DTSID="{8AA1F23A-83CD-4443-9555-637BE706228C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publisher"
+              DTS:DTSID="{CE08C110-4502-4F39-A253-22C0E9A913BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tags"
+              DTS:DTSID="{2E88EC59-E55B-44BD-A2FE-E6EED9C707CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="genre"
+              DTS:DTSID="{EAEA4CDD-AC9C-4B10-BF03-69BAECAF2806}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:ObjectName="Flat File Connection Manager 1"
+      DTS:DTSID="{5E82E69D-D97F-4EAE-9089-DDC314240D0A}"
+      DTS:CreationName="FLATFILE">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1036"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\LENOVO\Downloads\FantasticCatalogue (1).csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ref"
+              DTS:DTSID="{DFDC17D2-EAFC-4351-8E61-25458212AF1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="isbn"
+              DTS:DTSID="{71241A02-9ACA-4DB3-BF1D-4F8776FB18CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{E8625184-7D43-44FD-8C53-48D6DA8033A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="authors"
+              DTS:DTSID="{5857F604-6D6B-48B5-85D9-05045EAFC9E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="language"
+              DTS:DTSID="{6FF9A0D3-54B5-421C-80BB-CA408EE5B76E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pubdate"
+              DTS:DTSID="{23BE65D7-8E05-49D4-8B06-E7A13D8CA7E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="publisher"
+              DTS:DTSID="{70FD6EC1-7913-4A92-97DB-B89B322483D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tags"
+              DTS:DTSID="{AB86B8E6-BCB1-4D9A-B14A-305BF07EFD9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="genre"
+              DTS:DTSID="{9C85DF31-40FE-4965-AD6E-7E7824C95DC3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Fantastic]"
+      DTS:ObjectName="LocalHost.Fantastic"
+      DTS:DTSID="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Fantastic;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Cleaning the title column"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cleaning the title column"
+      DTS:DTSID="{A8BC3D29-F91B-4CA4-9EA1-2F4578EDACC6}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource=" select distinct &quot;publisher&quot; FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;  group by publisher&#xA;&#xA;&#xA; UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = REPLACE(title, 'â€“', '–');&#xA; &#xA;  select distinct &quot;title&quot; FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;  group by title&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = REPLACE(title, 'Ã©', 'é');&#xA;&#xA;&#xA;SELECT&#xA;  REPLACE(REPLACE(REPLACE(title, 'Ã©', 'é'), 'Ãª', 'ê'), 'Ã', 'à') AS title&#xA;FROM [Fantastic].[dbo].[OLE DB Destination];&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = REPLACE(REPLACE(REPLACE(REPLACE(&#xA;    title,&#xA;    'Ã©', 'é'),&#xA;    'Ãª', 'ê'),&#xA;    'Ã', 'à'),&#xA;    'Å', 'œ');&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(&#xA;    title,&#xA;    'à‰', 'É'),&#xA;    'à§', 'ç'),&#xA;    'â€™', '’'),&#xA;    'à®', 'î'),&#xA;    'à ', 'à'),&#xA;    'Æ', 'œ'),&#xA;    'Ë', 'è'),&#xA;    'Ê', 'ê'),&#xA;    'TÊ¿', 'Tʼ');&#xA;&#x9;&#xA;SELECT title&#xA;FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;WHERE title  LIKE '%[^a-zA-Z0-9 ]%';&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = SUBSTRING(title, 2, LEN(title))&#xA;WHERE title LIKE '&quot;%';&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = REPLACE(title, '–', '-')  -- Replace en dash with hyphen&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET title = LTRIM(RTRIM(title));&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\dropping non util columns"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:Disabled="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="dropping non util columns"
+      DTS:DTSID="{48AF36F8-6C93-431E-9B85-0B000A25C2D5}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource="ALTER TABLE [Fantastic].[dbo].[OLE DB Destination]&#xA;DROP COLUMN tags;&#xA;&#xA;ALTER TABLE [Fantastic].[dbo].[OLE DB Destination]&#xA;DROP COLUMN ref;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EMpty table"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EMpty table"
+      DTS:DTSID="{A337BAA5-A793-423E-A3FA-F6345DDC2239}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource="delete from [Fantastic].[dbo].[OLE DB Destination]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Langugage column"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Langugage column"
+      DTS:DTSID="{2E83664D-3B23-4344-92D4-3C89921E7FC3}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource="SELECT language, COUNT(*) AS language_count&#xA;FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;GROUP BY language;&#xA;&#xA;SELECT *&#xA;FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;WHERE language IS NULL OR language = '';&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET language = &#xA;  CASE &#xA;    WHEN language IS NULL OR  language = '' THEN 'fra'&#xA;    ELSE language&#xA;  END;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Preprocessing of the column Authors"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Preprocessing of the column Authors"
+      DTS:DTSID="{C941F25E-0B1E-4168-990E-BFA31DCAE1AD}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource="select distinct &quot;authors&quot; from [Fantastic].[dbo].[OLE DB Destination]&#xA;group by authors&#xA;&#xA;&#xA; UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET authors = REPLACE(LTRIM(RTRIM(authors)), '  ', ' ')&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET authors = REPLACE(REPLACE(authors, 'Ã©', 'e'), 'Ã¨', 'e');&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET authors = REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(&#xA;    authors,&#xA;    'à‰', 'É'),&#xA;    'à§', 'ç'),&#xA;    'â€™', '’'),&#xA;    'à®', 'î'),&#xA;    'à ', 'à'),&#xA;    'Æ', 'œ'),&#xA;    'Ë', 'è'),&#xA;    'Ê', 'ê'),&#xA;    'TÊ¿', 'Tʼ');&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET authors = REPLACE(REPLACE(authors, 'Ã©', 'e'), 'Ã¨', 'e');&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET [authors] = REPLACE([authors], 'Ã¤', 'a')&#xA;WHERE [authors] LIKE '%Ã¤%';&#xA;&#xA;SELECT authors&#xA;FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;WHERE authors LIKE '%[^a-zA-Z0-9 ]%';&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET [authors] = REPLACE(REPLACE([authors], 'Ã©', 'e'), 'Ã¨', 'e')&#xA;WHERE [authors] LIKE '%Ã%' OR [authors] LIKE '%e%'; -- Adjust as needed&#xA;&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET AuthorFirst = NULL, AuthorMiddle = NULL, AuthorLast = NULL;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET AuthorFirst = PARSENAME(REPLACE(authors, ';', '.'), 3),&#xA;    AuthorMiddle = PARSENAME(REPLACE(authors, ';', '.'), 2),&#xA;    AuthorLast = PARSENAME(REPLACE(authors, ';', '.'), 1);&#xA;&#xA;&#x9;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET&#xA;  AuthorFirst = CASE WHEN CHARINDEX(',', authors) &gt; 0 THEN SUBSTRING(authors, 1, CHARINDEX(',', authors) - 1) ELSE authors END,&#xA;  AuthorMiddle = CASE&#xA;                   WHEN CHARINDEX(',', authors) &gt; 0 AND CHARINDEX('&amp;', authors) &gt; CHARINDEX(',', authors) THEN&#xA;                     SUBSTRING(authors, CHARINDEX(',', authors) + 1, CHARINDEX('&amp;', authors) - CHARINDEX(',', authors) - 1)&#xA;                   ELSE&#xA;                     NULL  -- or any default value you want when the pattern is not found&#xA;                 END,&#xA;  AuthorLast = CASE WHEN CHARINDEX('&amp;', authors) &gt; 0 THEN SUBSTRING(authors, CHARINDEX('&amp;', authors) + 1, LEN(authors) - CHARINDEX('&amp;', authors)) ELSE NULL END&#xA;WHERE CHARINDEX(',', authors) &gt; 0 OR CHARINDEX('&amp;', authors) &gt; 0;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET&#xA;  AuthorMiddle = CASE&#xA;                   WHEN CHARINDEX(',', authors) &gt; 0 THEN SUBSTRING(authors, CHARINDEX(',', authors) + 1, LEN(authors) - CHARINDEX(',', authors))&#xA;                   ELSE NULL&#xA;                 END&#xA;WHERE CHARINDEX(',', authors) &gt; 0;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Preprocessing the publisher column"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:ThreadHint="0"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Preprocessing the publisher column"
+      DTS:DTSID="{E7F1FE17-1EC3-447A-A701-EC0728D92366}"
+      DTS:Description="Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7C3BFE03-4E0F-4E78-B06C-100D056ACA99}"
+          SQLTask:SqlStatementSource="UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET pubdate = LEFT(pubdate, CHARINDEX('T', pubdate) - 1);&#xA;&#xA;&#xA;SELECT publisher, COUNT(*) AS publisher_count&#xA;FROM [Fantastic].[dbo].[OLE DB Destination]&#xA;GROUP BY publisher;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET [Publisher] = REPLACE(REPLACE(REPLACE(REPLACE(&#xA;    [Publisher],&#xA;    'Ã©', 'e'),&#xA;    'Ã¨', 'e'),&#xA;    'Ã', 'A'),&#xA;    'Ã', 'A');&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = REPLACE(REPLACE(REPLACE(publisher, 'A‰', 'É'), 'A«', '«'), 'A¯', '¯');&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = LTRIM(RTRIM(publisher));&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = COALESCE(&#xA;    (SELECT TOP 1 Publisher&#xA;     FROM [Fantastic].[dbo].[OLE DB Destination] AS t2&#xA;     WHERE t2.authors = [Fantastic].[dbo].[OLE DB Destination].authors&#xA;        OR t2.isbn = [Fantastic].[dbo].[OLE DB Destination].isbn&#xA;        OR t2.title = [Fantastic].[dbo].[OLE DB Destination].title&#xA;        AND t2.Publisher IS NOT NULL&#xA;     ORDER BY NEWID()), -- Randomly select a non-null publisher from matching rows&#xA;    'Unknown'&#xA;)&#xA;WHERE publisher = '?';&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET Publisher = REPLACE(Publisher, 'Deno«l (DL 2008)', 'Deno«l')&#xA;WHERE Publisher = 'Deno«l (DL 2008)';&#xA;&#xA;&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = &#xA;  CASE &#xA;    WHEN publisher = '?' AND title LIKE '%Amos Daragon%' THEN &#xA;      CASE &#xA;        WHEN title LIKE '%Les Intouchables%' THEN 'Les Intouchables (édition originale)'&#xA;        WHEN title LIKE '%Éditions AdA%' THEN 'Éditions AdA (nouvelle édition)'&#xA;      END&#xA;    WHEN publisher = '?' AND title LIKE '%Andy Brazil%' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%ANGE%' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%Anita Blake%' THEN 'Milady'&#xA;    WHEN publisher = '?' AND title LIKE '%Anouna%' THEN 'Éditions du Seuil'&#xA;    WHEN publisher = '?' AND title LIKE '%Assassin Royal%' THEN 'Pocket Jeunesse'&#xA;    WHEN publisher = '?' AND title LIKE '%Autre-Monde%' THEN 'Pocket Jeunesse'&#xA;    -- Add more WHEN clauses for other publishers&#xA;    ELSE publisher -- Leave other publisher values unchanged&#xA;  END;&#xA;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = &#xA;  CASE &#xA;    WHEN publisher = '?' AND title LIKE '%Amos Daragon%' THEN &#xA;      CASE &#xA;        WHEN title LIKE '%Les Intouchables%' THEN 'Les Intouchables (édition originale)'&#xA;        WHEN title LIKE '%Éditions AdA%' THEN 'Éditions AdA (nouvelle édition)'&#xA;      END&#xA;    WHEN publisher = '?' AND title LIKE '%Andy Brazil%' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%ANGE%' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%Anita Blake%' THEN 'Milady'&#xA;    WHEN publisher = '?' AND title LIKE '%Anouna%' THEN 'Éditions du Seuil'&#xA;    WHEN publisher = '?' AND title LIKE '%Assassin Royal%' THEN 'Pocket Jeunesse'&#xA;    WHEN publisher = '?' AND title LIKE '%Autre-Monde%' THEN 'Pocket Jeunesse'&#xA;    WHEN publisher = '?' AND title LIKE '%Axis-03% L''homme étoile' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%Axis-1% Tranchant d''Acier' THEN 'Éditions du Masque'&#xA;    WHEN publisher = '?' AND title LIKE '%Base Vénus-5% La Lune de Diamant' THEN 'Fleuve Noir'&#xA;    WHEN publisher = '?' AND title LIKE '%Bernhard Gunther-03% Un requiem allemand' THEN 'Fleuve Noir'&#xA;    WHEN publisher = '?' AND title LIKE '%Bernhard Gunther-04% La mort, entre autres' THEN 'Fleuve Noir'&#xA;    WHEN publisher = '?' AND title LIKE '%Bernhard Gunther-1% L''été de cristal' THEN 'Fleuve Noir'&#xA;   &#xA;    ELSE publisher &#xA;  END;&#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = &#xA;  CASE &#xA;    &#xA;    WHEN title LIKE '%Cap sur la Baltique%' THEN 'Fleuve Noir (France)'&#xA;    WHEN title LIKE '% L''Hérétique et son commis%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%lUn Bénédictin pas ordinaire%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '% Un cadavre de trop%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le Capuchon Du Moine%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%La foire de saint Pierre%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le lépreux de Saint-Gilles%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%La vierge dans la glace%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le moineau du sanctuaire%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%L''apprenti du diable%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%La rançon du mort%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Trafic de reliques%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le pà¢lerin de la haine%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Un insondable mystà¨re%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Les Ailes du corbeau%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Une rose pour loyer%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%L''Ermite de la forêt d''Eyton%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%La Confession de frà¨re Haluin%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le Champ du potier%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%L''Été des Danois%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Le Voleur de Dieu%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%Frà¨re Cadfœl fait pénitence%' THEN 'Le Seuil (France)'&#xA;    WHEN title LIKE '%La Chute d''Hyperion 1%' THEN 'Robert Laffont (France)'&#xA;    WHEN title LIKE '%La Chute d''Hyperion 2%' THEN 'Robert Laffont (France)'&#xA;    WHEN title LIKE '%Endymion 1%' THEN 'Robert Laffont (France)'&#xA;    WHEN title LIKE '%Endymion 2%' THEN 'Robert Laffont (France)'&#xA;    WHEN title LIKE '%L''eveil d''Endymion 1%' THEN 'Robert Laffont (France)'&#xA;    WHEN title LIKE '%L''eveil d''Endymion 2%' THEN 'Robert Laffont (France)'&#xA;    -- Continue adding WHEN clauses for other publishers&#xA;    ELSE publisher -- Leave other publisher values unchanged&#xA;  END;&#xA;&#xA;&#xA;&#xA;  UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = &#xA;  CASE &#xA;    -- ... (previous WHEN clauses)&#xA;    WHEN title LIKE '%La mort, entre autres%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%L''été de cristal%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%La Pâle Figure%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Une Douce Flamme%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Le pà¨lerin de la haine%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Les orphelins de l''Helice%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Represailles%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Entretien avec un vampire%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Lestat le Vampire%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Conan le Cimmérien%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Nous les Dieux%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Le Souffle des Dieux%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Fascination%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Tentation%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Hésitation%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Révelation%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%L''appel du san,la seconde vie de Bree Tanner%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Les Démons de Dexter%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Dexter dans de beaux draps%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Ce cher Dexter%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Le passager noir%' THEN 'Fleuve Noir'&#xA;    -- Add more WHEN clauses for other publishers&#xA;    ELSE publisher -- Leave other publisher values unchanged&#xA;  END;&#xA;&#xA;    &#xA;&#xA;UPDATE [Fantastic].[dbo].[OLE DB Destination]&#xA;SET publisher = &#xA;  CASE &#xA;   &#xA;    WHEN title LIKE '%La Lune de Diamant%' THEN 'Éditions J''ai lu pour le livre de Arthur C. Clarke et Paul Preuss'&#xA;    WHEN title LIKE '%Un requiem allemand%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%La Pâle Figure%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Révélation%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Les Démons de Dexter%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%La Mort a ses Entrées%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Regrets Eternels%' THEN 'J''ai Lu'&#xA;    WHEN title LIKE '%Les Bas de Larguevent%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Les cavernes d''acier%' THEN 'Hachette'&#xA;    WHEN title LIKE '%Face aux feux du Soleil%' THEN 'Hachette'&#xA;    WHEN title LIKE '%Les robots de l''aube%' THEN 'Hachette'&#xA;    WHEN title LIKE '%Les robots et l''empire%' THEN 'Hachette'&#xA;    WHEN title LIKE '%Les courants de l''espace%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Tyrann%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Cailloux dans le ciel%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Dette d''Os%' THEN 'Pocket'&#xA;    WHEN title LIKE '%La Princesse des glaces%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Le Prédicateur%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Le Tailleur de pierre%' THEN 'Pocket'&#xA;    WHEN title LIKE '%L''Oiseau de mauvais augure%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Total kheops%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Chourmo%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Solea%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Prelude a Fondation%' THEN 'Pocket'&#xA;    WHEN title LIKE '%L''aube de Fondation%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Fondation foudroyée%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Terre et Fondation%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Triplanétaire%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Le premier Fulgur%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Patrouille galactique%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%L''énigme de Catalina%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Le Guide du Routard Galactique%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Le Dernier Restaurant avant la Fin du Monde%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Salut, et encore merci pour le poisson%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Globalement Inoffensive%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Dragon rouge%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Le silence des agneaux%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Les vertes collines de la Terre%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Révolte en 2100%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Les enfants de Mathusalem%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Les orphelins du ciel%' THEN 'Pocket'&#xA;    WHEN title LIKE '%[Jack Ryan-1] A la poursuite d''Octobre Rouge%' THEN 'Pocket'&#xA;    WHEN title LIKE '%Vivre et laisser mourir%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Bons baisers de Russie%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%Motel 007%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%L''homme au pistolet d''or%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%L''homme aux cercles bleus%' THEN 'Fleuve Noir'&#xA;    WHEN title LIKE '%L''homme à l''envers%' THEN 'Fleuve Noir'&#xA;    -- Add more WHEN clauses for other publishers&#xA;    ELSE publisher -- Leave other publisher values unchanged&#xA;  END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tabel catalogue"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tabel catalogue"
+      DTS:DTSID="{1FD2D20D-A210-498F-862B-66C73EA6ED5B}"
+      DTS:Description="Data Flow Task"
+      DTS:CreationName="SSIS.Pipeline.3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tabel catalogue\Flat File Source"
+              name="Flat File Source"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              description="Flat File Source"
+              localeId="1036"
+              usesDispositions="true"
+              version="1"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1">
+              <properties>
+                <property
+                  name="RetainNulls"
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null.">false</property>
+                <property
+                  name="FileNameColumnName"
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tabel catalogue\Flat File Source.Connections[FlatFileConnection]"
+                  name="FlatFileConnection"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[ref]"
+                      name="ref"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[ref]"
+                      length="50"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ref]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[isbn]"
+                      name="isbn"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[isbn]"
+                      length="50"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[isbn]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      name="title"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      dataType="text"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[authors]"
+                      name="authors"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[authors]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[authors]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[language]"
+                      name="language"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[language]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[language]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[pubdate]"
+                      name="pubdate"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[pubdate]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pubdate]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[publisher]"
+                      name="publisher"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[publisher]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[publisher]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[tags]"
+                      name="tags"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[tags]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tags]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[genre]"
+                      name="genre"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[genre]"
+                      length="50"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[genre]">
+                      <properties>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                        <property
+                          name="UseBinaryFormat"
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format.">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ref]"
+                      name="ref"
+                      dataType="str"
+                      length="50"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[isbn]"
+                      name="isbn"
+                      dataType="str"
+                      length="50"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      name="title"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[authors]"
+                      name="authors"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[language]"
+                      name="language"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pubdate]"
+                      name="pubdate"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[publisher]"
+                      name="publisher"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tags]"
+                      name="tags"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[genre]"
+                      name="genre"
+                      dataType="str"
+                      length="50"
+                      codePage="1252" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output]"
+                  name="Flat File Source Error Output"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      dataType="text"
+                      codePage="1252" />
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tabel catalogue\OLE DB Destination"
+              name="OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              description="OLE DB Destination"
+              usesDispositions="true"
+              version="4"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+              <properties>
+                <property
+                  name="CommandTimeout"
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">0</property>
+                <property
+                  name="OpenRowset"
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset.">[dbo].[OLE DB Destination]</property>
+                <property
+                  name="OpenRowsetVariable"
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."></property>
+                <property
+                  name="SqlCommand"
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  name="DefaultCodePage"
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source.">1252</property>
+                <property
+                  name="AlwaysUseDefaultCodePage"
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data.">false</property>
+                <property
+                  name="AccessMode"
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  typeConverter="AccessMode">3</property>
+                <property
+                  name="FastLoadKeepIdentity"
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on.">false</property>
+                <property
+                  name="FastLoadKeepNulls"
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on.">false</property>
+                <property
+                  name="FastLoadOptions"
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on.">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  name="FastLoadMaxInsertCommitSize"
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on.">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tabel catalogue\OLE DB Destination.Connections[OleDbConnection]"
+                  name="OleDbConnection"
+                  description="The OLE DB runtime connection used to access the database."
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Fantastic]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Fantastic]" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Destination Input"
+                  hasSideEffects="true"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[isbn]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[isbn]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[isbn]"
+                      cachedName="isbn"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[title]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      cachedName="title"
+                      cachedDataType="text"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[authors]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[authors]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[authors]"
+                      cachedName="authors"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[language]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[language]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[language]"
+                      cachedName="language"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pubdate]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[pubdate]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pubdate]"
+                      cachedName="pubdate"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[publisher]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[publisher]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[publisher]"
+                      cachedName="publisher"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[genre]"
+                      lineageId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output].Columns[genre]"
+                      externalMetadataColumnId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genre]"
+                      cachedName="genre"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedCodepage="1252" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[isbn]"
+                      name="isbn"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      name="title"
+                      dataType="text"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[authors]"
+                      name="authors"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[language]"
+                      name="language"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pubdate]"
+                      name="pubdate"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[publisher]"
+                      name="publisher"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genre]"
+                      name="genre"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AuthorFirst]"
+                      name="AuthorFirst"
+                      dataType="nText" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AuthorMiddle]"
+                      name="AuthorMiddle"
+                      dataType="nText" />
+                    <externalMetadataColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AuthorLast]"
+                      name="AuthorLast"
+                      dataType="nText" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tabel catalogue\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  name="OLE DB Destination Error Output"
+                  exclusionGroup="1"
+                  synchronousInputId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Tabel catalogue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tabel catalogue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Tabel catalogue\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tabel catalogue.Paths[Flat File Source Output]"
+              name="Flat File Source Output"
+              startId="Package\Tabel catalogue\Flat File Source.Outputs[Flat File Source Output]"
+              endId="Package\Tabel catalogue\OLE DB Destination.Inputs[OLE DB Destination Input]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:From="Package\EMpty table"
+      DTS:To="Package\Tabel catalogue"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:DTSID="{FE032E13-F3EA-48C9-8893-846DB41FC21F}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:From="Package\Tabel catalogue"
+      DTS:To="Package\dropping non util columns"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:DTSID="{1583874B-029F-4BDA-8797-0AFA0BD453E4}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:From="Package\dropping non util columns"
+      DTS:To="Package\Cleaning the title column"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:DTSID="{6B8F8A9B-7ECB-423D-9EBE-41C0C6B14630}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:From="Package\Cleaning the title column"
+      DTS:To="Package\Preprocessing of the column Authors"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:DTSID="{E1655C91-E11E-4346-8910-DDFA0DEF9F08}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:From="Package\Preprocessing of the column Authors"
+      DTS:To="Package\Langugage column"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:DTSID="{858CC92C-1A90-4F83-85B3-2E9D39AFFEE8}"
+      DTS:CreationName="" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:From="Package\Langugage column"
+      DTS:To="Package\Preprocessing the publisher column"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:DTSID="{04BE3CFF-8C20-4657-98E3-9A6CCDAD35A0}"
+      DTS:CreationName="" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="200,42"
+          Id="Package\dropping non util columns"
+          TopLeft="5.50000000000003,209.5" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\EMpty table"
+          TopLeft="39,5.5" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Tabel catalogue"
+          TopLeft="29.5,107.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="105.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="195,43"
+          Id="Package\Cleaning the title column"
+          TopLeft="8.00000000000003,311.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="105.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="251,42"
+          Id="Package\Preprocessing of the column Authors"
+          TopLeft="258,225" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Langugage column"
+          TopLeft="728,334" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="105.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="136.666666666667,311.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="246.833333333333,-44.5"
+              Start="0,0"
+              End="246.833333333333,-37">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-14.0172939979654" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-14.0172939979654"
+                    Point2="0,-18.0172939979654"
+                    Point3="4,-18.0172939979654" />
+                  <mssgle:LineSegment
+                    End="242.833333333333,-18.0172939979654" />
+                  <mssgle:CubicBezierSegment
+                    Point1="242.833333333333,-18.0172939979654"
+                    Point2="246.833333333333,-18.0172939979654"
+                    Point3="246.833333333333,-22.0172939979654" />
+                  <mssgle:LineSegment
+                    End="246.833333333333,-37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="424,267">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="387.5,67"
+              Start="0,0"
+              End="387.5,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.0546318289786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.0546318289786"
+                    Point2="0,27.0546318289786"
+                    Point3="4,27.0546318289786" />
+                  <mssgle:LineSegment
+                    End="383.5,27.0546318289786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="383.5,27.0546318289786"
+                    Point2="387.5,27.0546318289786"
+                    Point3="387.5,31.0546318289786" />
+                  <mssgle:LineSegment
+                    End="387.5,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="245,42"
+          Id="Package\Preprocessing the publisher column"
+          TopLeft="525,392" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="728,355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-80.5,37"
+              Start="0,0"
+              End="-80.5,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-76.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-76.5,0"
+                    Point2="-80.5,0"
+                    Point3="-80.5,4" />
+                  <mssgle:LineSegment
+                    End="-80.5,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tabel catalogue">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tabel catalogue\OLE DB Destination"
+          TopLeft="369,221" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Tabel catalogue\Flat File Source"
+          TopLeft="293,47" />
+        <EdgeLayout
+          Id="Package\Tabel catalogue.Paths[Flat File Source Output]"
+          TopLeft="368,89">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86,132"
+              Start="0,0"
+              End="86,124.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62"
+                    Point2="0,66"
+                    Point3="4,66" />
+                  <mssgle:LineSegment
+                    End="82,66" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82,66"
+                    Point2="86,66"
+                    Point3="86,70" />
+                  <mssgle:LineSegment
+                    End="86,124.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tabel catalogue\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
